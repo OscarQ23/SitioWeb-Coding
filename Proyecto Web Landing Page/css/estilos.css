@@ -1,0 +1,790 @@
+/*Fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Bevan&family=Khand&family=Montserrat:wght@200&family=Poppins:wght@100&family=Sansita+Swashed:wght@300&display=swap');
+
+
+*{
+   box-sizing: border-box;
+}
+
+/*subtitulos*/
+.titulos{
+    display: block;
+    font-family: 'Khand';
+    font-size: 60px;
+    color: #15C0DB;
+    text-shadow: 5px 6px 1px #2e2e2e31;
+    letter-spacing: 1px;
+}
+
+
+
+/*-------------Primera seccion------------------------------*/
+
+
+
+/*Fondo Header*/
+.Primero{
+    width: 100%;
+    background-color: #00A0D2;
+}
+
+/*Estructura del nav*/
+.nav-grid{
+    box-sizing: border-box;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 15% 55% 40%;
+    z-index: 100;
+    position: fixed;
+    top: 0;   
+}
+
+/*Logo del Nav*/
+.logo-nav{
+    background-color: transparent;
+ }
+
+
+ 
+/*Configuracion del logo si es texto*/
+.logo{
+    
+    background-color: transparent;
+    color: #fbfbfb;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 30px;
+    height: 25px;
+    
+}
+
+
+/*Opciones del Menu*/
+.grid-lista{
+    background-color:transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+}
+
+.lista{
+    list-style: none;     
+}
+
+.lista a{
+
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15spx;
+    text-decoration: none;
+    color: aliceblue;
+    
+}
+
+.lista a:hover{
+
+    color: #000000;
+    transition: 0.4s;
+}
+
+/*Boton del Contact*/
+
+.contacto{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: transparent;
+}
+
+.contacto-btn{
+    color: #fbfbfb;
+    background-color: transparent;
+    border: 1px solid #ffff;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 10px 8px 10px;
+  
+}
+
+.contacto-btn:hover{
+    background-color: #f7f8f9;
+    color: #15C0DB;
+    transition: 0.4s;
+    
+}
+
+
+
+/*configuraciones para el menu resposive*/
+
+#check{
+    display: none;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: #ffff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+
+/*Animaciones del menu*/
+header.abajo .grid-lista ,
+header.abajo .contacto,
+header.abajo .logo-nav{
+            background-color: #fafafa;
+            border-bottom: 0.1px solid  #68686860 ;
+            transition: 0.7s;
+                      
+}
+
+/*modificaciones de tamaño y color lado del logo*/
+header.abajo .logo-nav .logo{  
+    color: #00A0D2;
+    font-size: 25px;
+    transition: 1s;
+}
+
+/*modificaciones para el listado del menu*/
+header.abajo .grid-lista li a
+{
+    font-weight: bolder;
+    color: #00A0D2;
+    font-size: 13px;
+            
+}
+
+header.abajo .grid-lista li a:hover
+{
+    color: #1d1e1f;
+            
+}
+
+/*modificaciones para el apartado contactos*/
+header.abajo .contacto .contacto-btn
+{
+    font-size: 15px;
+    font-weight: bolder;
+    border:1px solid #00A0D2;
+    color: #00A0D2;
+}
+
+header.abajo .contacto .contacto-btn:hover
+{
+    background-color: #15C0DB;
+    color: #f7f8f9;
+}
+
+
+/*SLIDER DEL SITIO*/
+
+.slider{
+    background-color: #00A0D2;
+    height: 650px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*Fuente Principal*/
+.slider .title{
+    font-family: 'Khand';
+    display: block;
+    color: #fafafa;
+    font-size: 70px;
+    text-align: center;
+    line-height:70px;
+}
+
+.slider .title:after{  
+    font-weight: lighter;
+    display: block;
+    font-size: 35px;
+    font-family: 'Montserrat', sans-serif;
+    content: "consulting and services"; 
+}
+
+
+/*configuracion de los iconos*/
+.iconos{
+    position: absolute;
+    width: 100%;
+    max-width: 1500px;
+    height: 560px;
+}
+
+.html{
+    position:absolute;
+    right: 120px;
+    top: 100px;
+    width: 80px;
+}
+
+.css{
+    position:absolute;
+    right: 100px;
+    top:300px;
+    width: 50px;
+}
+
+.js{
+    width: 90px;
+    position: absolute;
+    bottom: 100px;
+    right: 200px;
+}
+
+
+.node{
+    position:absolute;
+    left: 100px;
+    top:110px;
+    width: 90px;
+    
+}
+
+.sql{
+    position:absolute;
+    left: 30px;
+    top:300px;
+    width: 80px;
+}
+
+.java{
+    position:absolute;
+    left: 175px;
+    bottom:80px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Seccion Dos servicios*/
+
+.segunda{
+    
+    box-sizing: border-box;
+    margin-bottom: 100px;
+   
+}
+
+
+/*titulo del servicio*/
+.titulo-servicio{
+    text-align: center;
+    margin: 120px 0px 60px 0px;
+    padding: 0px 0px 0px 0px ;
+    
+}
+
+.informacion-servicio{
+    width: 70%;
+    max-width: 1100px;
+    font-family: 'khand';
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #1d1e1f;
+    margin: auto;
+    margin-bottom: 110px;   
+}
+
+
+.services-grid{
+
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 20px 0px 20px;
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(3 , 1fr);
+
+}
+
+/*card de servicios*/
+.uno,
+.dos,
+.tres{
+    box-sizing: border-box;
+    width: 97%;
+    position: relative;
+    border-radius: 10px;
+    background-color: white;
+    border: 0.2px #15C0DB solid;
+    box-shadow: 4px 7px 5px rgba(0, 0, 0, 0.212);
+}
+
+
+.img-uno{
+    box-sizing: border-box;
+    width: 45px;
+    position:absolute;
+    left: -20px;
+    top: -20px;
+    
+}
+
+
+.img-dos{
+    box-sizing: border-box;
+    position:absolute;
+    width: 45px;
+    left: 40%;
+    top: -35px;
+    
+}
+
+
+.img-tres{
+    box-sizing: border-box;
+    position:absolute;
+    width: 55px;
+    left: 90%;
+    top: -20px;
+    
+}
+
+
+
+.titulo-card-uno,
+.titulo-card-dos,
+.titulo-card-tres{    
+    width: 80%;
+    margin: 40px auto;
+    font-weight: bolder;
+    font-family:'Khand';
+    letter-spacing: 1px;
+    font-size: 23px;
+    text-align: center;
+    color: #15C0DB;
+    text-shadow: 1px 1px 5px #978e8e;
+    cursor: pointer;
+}
+
+.titulo-card-uno::Before{
+    content: "Working in HTML";
+    font-family: 'Montserrat';
+    font-size: 15px;
+    display: block;
+    padding: 15px 0px;
+    color: #1d1e1f;
+}
+
+.titulo-card-dos::Before{
+    content: "Working in CSS";
+    font-family: 'Montserrat';
+    font-size: 15px;
+    display: block;
+    padding: 15px 0px;
+    color: #1d1e1f;
+}
+
+.titulo-card-tres::Before{
+    content: "Working in NODEJS";
+    font-family: 'Montserrat';
+    font-size: 15px;
+    display: block;
+    padding: 15px 0px;
+    color: #1d1e1f;
+}
+
+
+
+.info-card{
+    width: 85%;
+    margin: auto;
+    margin-bottom: 90px;
+    font-family: 'Montserrat';
+    letter-spacing: 0.8px;
+    font-weight: bold;
+    font-size: 14px;
+    text-align:center;
+}
+
+.service-btn{
+    
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #00A0D2;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.219);
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+    padding: 7px;
+}
+
+
+.service-btn:hover{
+    background-color: #00a1d2;
+    color: #fafafa;
+    border: 1px solid rgba(255, 255, 255, 0);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.473);;
+    transition: 0.3s;
+}
+
+
+
+
+
+
+/*Parte tres*/
+
+.tercero{
+   
+    background-color: #00A0D2;
+    padding:110px 250px 110px 0px; 
+    position: relative;
+    width: 100%;
+    margin: auto;
+    
+}
+
+.info-slider-tercero{
+    
+    background-color: white;
+    box-shadow: 4px 7px 5px rgba(0, 0, 0, 0.212);
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    border-radius: 10px;
+    opacity: 0.8;
+}
+
+.titulo-tercero{
+    padding: 50px 0px 0px 30px ;
+    font-family: 'Khand';
+    text-shadow: 4px 3px 1px #2e2e2e31;
+    color: #15C0DB;
+    letter-spacing: 0.7px;
+    font-size: 60px;
+    text-align: left;
+}
+
+.info-tercero{
+    width: 90%;
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+    text-align: justify;
+    padding: 0px 90px 60px 30px ;
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+
+.tercero img{ 
+    max-width: 1000px;
+    background-color: white;
+    position: absolute;
+    width: 370px;
+    bottom:40%;
+    left: 83%;
+    border-radius: 10px;
+    box-shadow: 15px 15px 0px rgba(0, 0, 0, 0.212);
+}
+
+
+
+/*parte 4*/
+
+
+.fondo{
+    position: relative;
+    top:-55px;
+    background: linear-gradient(to bottom, rgba(48, 48, 48, 0.103) 65%, black 0%, white 50%, white 100% );
+}
+
+.cuarto{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card-info{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.titulo-card-cuarto{
+    padding:70px 0px 0px 0px ;
+    font-family: 'Khand';
+    text-shadow: 3px 3px 1px #2e2e2e31;
+    color: #15C0DB;
+    font-size: 65px;
+    text-align: left;
+}
+
+.info-card4{
+    padding: 20px 20px 50px 0px ;
+    font-family: 'Montserrat';
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: justify;
+    color: rgb(0, 0, 0);
+}
+
+
+
+
+/*five section*/
+.grid-formulario{
+    position: relative;
+    width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 49% 49%;
+}
+
+.form1,.form2{
+    position: relative;
+    background-color: #15C0DB;
+    width: 70%;
+    border-radius: 10px;
+    padding: 0;
+    margin: 0px auto 70px auto;
+    box-shadow: 4px 7px 5px rgba(0, 0, 0, 0.212);
+}
+
+
+.titulo-formulario{
+    width: 90%;
+    margin: auto;
+    padding: 25px 0px 20px 0px;
+    font-family: 'Khand';
+    text-shadow: 5px 6px 1px #2e2e2e31;
+    color: #ffff;
+    font-size: 40px;
+    text-align: left;
+}
+
+.info-form{
+    width: 90%;
+    margin: auto;
+    padding: 0px 0px 100px 0px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 14px;
+    text-align: justify;
+    color: #fafafa;
+}
+
+.btn-form{
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #fafafa;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.596);
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    padding: 9px;
+    
+}
+
+.btn-form:hover{
+    background-color: #ffffff;
+    color: #15C0DB;
+    border: 1px solid rgba(255, 255, 255, 0);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.473);;
+    transition: 0.3s;
+}
+
+/*six section*/
+
+.seis{
+    background-color: #00A0D2;
+    position: relative;
+    padding: 0px 0px 0px 0px;
+}
+
+.last-info{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 170px 0px 170px 0px;
+    background-color: #00A0D2;
+
+}
+
+.img2{
+    background-color: white;
+    box-shadow: 15px 15px 0px rgba(0, 0, 0, 0.212);
+    position: absolute;
+    width: 50%;
+    top:15%;
+    left: 5%;
+    border-radius: 10px;
+    z-index:0;
+}
+
+
+.base{
+
+    position: relative;
+    background-color: #fafafa;
+    box-shadow: 4px 7px 5px rgba(0, 0, 0, 0.212);
+    width: 50%;
+    margin: 100px 0px 0px 45%;
+    padding: 50px 0px 50px 0px;
+    border-radius: 10px;
+    opacity: 0.8;
+    z-index: 30;
+   }
+
+.titulo-card-seis{
+    width: 100%;
+    padding: 0px 0px 0px 0px ;
+    font-family: 'Khand';
+    text-shadow: 4px 3px 1px #2e2e2e31;
+    color: #15C0DB;
+    font-size: 50px;
+    text-align: center;
+}
+
+
+/*Pie de pagina*/
+
+.foot{
+    position: relative;
+    background-color: #F7F8F9;
+    width: 100%;
+    
+}
+
+.logo-footer{
+color: #00A0D2;
+font-size: 30px;
+font-size: 30px;
+font-family: 'Montserrat', sans-serif;
+padding: 0PX 0PX 0PX 30PX;
+
+}
+
+.derechos{
+    position: absolute;
+    bottom: 2px;
+    padding: 0px 0px 0px 30px;
+    font-size: 13px;
+    color: #434344;
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+
+.footer-logo{
+
+
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    height: 300px;
+    background-color: #F7F8F9;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer-red{
+    
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    height: 300px;
+    background-color: #F7F8F9;
+}
+
+.title-red{
+    font-family: 'Montserrat';
+    font-size: 18px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.redes1,.redes2{
+    margin-top: 25px;
+    border-left:0.5px solid #b8b8b8 ;
+    padding: 0px 0px 0px 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
+
+.redes1 img , .redes2 img{
+    
+    width: 25px;
+}
+
+.date{
+    font-family: 'Khand';
+    font-size: 17px;
+    display: inline-block;
+    position: relative;
+    bottom: 5px;
+    padding: 0px 0px 0px 20px;
+    margin: 0px 0px 0px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
